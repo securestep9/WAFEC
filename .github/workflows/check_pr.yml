@@ -12,6 +12,7 @@ jobs:
         # uses: Talentia-Software-OSS/check-pr-comments-action@839beb361a46f4482cd149c8cdbef9c5b8f2bba5
         uses: Talentia-Software-OSS/check-pr-comments-action@v0.0.3
         with:
+          GITHUB_TOKEN: ${{ secrets.SECRET_GITHUB_TOKEN }}
           # This text must appear in a PR description
           comments-must-contain: '# Description'
  
