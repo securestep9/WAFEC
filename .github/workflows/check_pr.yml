@@ -1,4 +1,4 @@
-name: "CHeck PR Commets"
+name: "Check PR Comments"
 on:
   pull_request:
   
