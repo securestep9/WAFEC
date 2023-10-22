@@ -1,1 +1,16 @@
-  # You may pin to the exact commit or the version.
+name: "CHeck PR Commets"
+on:
+  pull_request:
+  
+jobs:
+  check_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CheckPRComments
+        # You may pin to the exact commit or the version.
+        # uses: Talentia-Software-OSS/check-pr-comments-action@839beb361a46f4482cd149c8cdbef9c5b8f2bba5
+        uses: Talentia-Software-OSS/check-pr-comments-action@v0.0.3
+        with:
+          # This text must appear in a PR description
+          comments-must-contain: '# Description'
+ 
