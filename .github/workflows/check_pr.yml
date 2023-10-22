@@ -1,7 +1,8 @@
 name: "Check PR Comments"
 on:
   pull_request:
-  
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   check_pr:
     runs-on: ubuntu-latest
